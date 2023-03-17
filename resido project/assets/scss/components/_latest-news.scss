@@ -1,0 +1,68 @@
+#latest-news {
+    padding: 80px 0;
+
+    .listing {
+        .blog-item {
+            position: relative;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 6px;
+            margin-top: 25px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+
+            .photo-wrapper {
+                padding: 10px;
+                a {
+                    img {
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .content {
+                .bl-date {
+                    padding: 10px 20px;
+
+                    .post-date {
+                        i {
+                            margin-right: 7px;
+                        }
+                    }
+                }
+
+                .bl-info {
+                    padding: 5px 20px 30px;
+
+                    .bl-title {
+                        font-size: 19px;
+                        line-height: 26px;
+                        margin-bottom: 4px;
+                    }
+
+                    p {
+                        line-height: 1.8;
+                        margin: 0 0 10px;
+                    }
+
+                    .continue-btn {
+                        position: relative;
+                        font-family: 'Lora', serif;
+                        font-size: 20px;
+                        font-style: italic;
+                        display: inline-block;
+                        margin-top: 12px;
+
+                        &::before {
+                            position: absolute;
+                            content: '\eb19';
+                            font-family: 'lineicons';
+                            right: -27px;
+                            top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

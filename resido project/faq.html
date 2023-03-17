@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container navbar-bg">
+              <a class="navbar-brand" href="index.html" target="_blank">
+                <img src="assets/img/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <span class="nav-menus-wrapper-close-button">✕</span>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Listing</a>
+                  </li>
+                  <li class="nav-item has-children">
+                    <a class="nav-link" href="#">
+                      Features
+                    </a>
+                    <ul class="nav-submenu z-2">
+                      <li>
+                        <a href="#">Single Property<i class="ti-angle-right"></i></a>
+                      </li>
+                      <li>
+                        <a href="#">Agencies & Agents<i class="ti-angle-right"></i></a>
+                      </li>
+                      <li>
+                        <a href="#">My Account<i class="ti-angle-right"></i></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+                  </li>
+                </ul>
+                <ul class="nav-actions d-flex align-items-center">
+                    <li class="add-property">
+                        <a href="#">
+                            <img src="assets/img/submit.svg" width="20" class="me-2" alt="">
+                            <span>Add Property</span>
+                        </a>
+                    </li>
+                    <li class="login z-1">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <img src="assets/img/user-light.svg" alt="">
+                            <span>Sign In</span>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <section id="faq-image-cover">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <div class="faq-wrapper">
+                <h1 class="text-light">Frequently Asked Questions</h1>
+                <div class="faq-search">
+                  <form action="">
+                    <input type="search" class="form-control" placeholder="Search Your Query...">
+                    <button type="submit">
+                      <i class="ti-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-options" class="bg-light">
+        <div class="container">
+          <div class="row contacts">
+            <div class="col-lg-4">
+              <div class="contact-item">
+                <i class="ti-shopping-cart icon-option-cl"></i>
+                <div class="content">
+                  <h4>Contact Sales</h4>
+                  <p>sales@rikadahelp.co.uk</p>
+                  <span>+01 215 245 6258</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="contact-item">
+                <i class="ti-user icon-option-cl"></i>
+                <div class="content">
+                  <h4>Contact Sales</h4>
+                  <p>sales@rikadahelp.co.uk</p>
+                  <span>+01 215 245 6258</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="contact-item">
+                <i class="ti-comment-alt icon-option-cl"></i>
+                <div class="content">
+                  <h4>Start Live Chat</h4>
+                  <span>+01 215 245 6258</span>
+                  <span class="live-chat">Live Chat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-10">
+              <div class="btn-wrapper">
+                <ul class="nav nav-tabs customize-tab" id="myTab" role="tablist">
+								  <li class="nav-item" id="general" role="presentation">
+									<a class="nav-link active" data-bs-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+								  </li>
+								  <li class="nav-item" id="payment" role="presentation">
+									<a class="nav-link" data-bs-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="false">Payment</a>
+								  </li>
+								  <li class="nav-item" id="upgrade" role="presentation">
+									<a class="nav-link" data-bs-toggle="tab" href="#upgrade" role="tab" aria-controls="upgrade" aria-selected="false">Upgrade</a>
+								  </li>
+								</ul>
+              </div>
+              <div class="tab-wrapper">
+                <div class="tab-content general-tab fade active show" id="general" role="tabpanel" aria-labelledby="general-tab">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapse">
+                          How To Install Rikada Theme?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="collapseOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          What is main Requirements For Rikada?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Why Choose Rikada Theme?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content payment-tab fade" id="payment" role="tabpanel" aria-labelledby="general-tab">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapse">
+                          May I Request For Refund?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="collapseOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          May I Get Any Offer in Future?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          How Much Time It will Take For refund?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content upgrade-tab fade" id="upgrade" role="tabpanel" aria-labelledby="general-tab">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapse">
+                          How To Upgrade Rikada Theme?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="collapseOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Rikada available for WordPress Version?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Why We need to upgrade Rikada?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <section id="become-agent">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="action">
+                  <div class="title">
+                    <h3>Want to Become a Real Estate Agent?</h3>
+                    <span>We'll help you to grow your career and growth.</span>
+                  </div>
+                  <a href="#" class="btn btn-action">SignUp Today</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section id="dark-footer-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="footer-widget">
+                  <img src="assets/img/logo-light.png" alt="">
+                  <div class="footer-add">
+                    <p>Śliczna 34A, 31-444 Kraków.</p>
+                    <p>+48 452 847 967</p>
+                    <p>szaur018@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer-widget">
+                  <h4>Navigations</h4>
+                  <ul class="footer-menu">
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="faq.html">FAQs Page</a></li>
+                    <li><a href="checkout.html" target="_blank">Checkout</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer-widget">
+                  <h4>The Highlights</h4>
+                  <ul class="footer-menu">
+                    <li><a href="">Apartment</a></li>
+                    <li><a href="">My Houses</a></li>
+                    <li><a href="">Restaurant</a></li>
+                    <li><a href="">Nightlife</a></li>
+                    <li><a href="">Villas</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer-widget">
+                  <h4>My Account</h4>
+                  <ul class="footer-menu">
+                    <li><a href="">My Profile</a></li>
+                    <li><a href="">My account</a></li>
+                    <li><a href="">My Property</a></li>
+                    <li><a href="">Favorites</a></li>
+                    <li><a href="">Cart</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer-widget">
+                  <h4>Download Apps</h4>
+                  <a href="#" class="other-store-link">
+                    <div class="other-store-app">
+                      <div class="os-app-icon">
+                        <i class="lni lni-play-store"></i>
+                      </div>
+                      <div class="os-app-caps">
+                        Google Play
+                        <span>Get It Now</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="other-store-link">
+                    <div class="other-store-app">
+                      <div class="os-app-icon">
+                        <i class="lni lni-apple-brand"></i>
+                      </div>
+                      <div class="os-app-caps">
+                        App Store
+                        <span>Now it Available</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section id="copy-right">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                  <p class="mb-0">© 2023 Resido. Designd By <a href="https://github.com/zaursuleymnv">Zaur Suleymanlı</a> All Rights Reserved</p>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="social-links">
+                    <li>
+                      <a href="#">
+                      <i class="ti-facebook"></i>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="ti-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="ti-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/zaur-s-4a3524224/" target="_blank">
+                        <i class="ti-linkedin"></i>
+                      </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+    </footer>
+
+    <a id="back2Top" class="top-scroll" title="Back to top" href="#" style="display: block;">
+        <i class="ti-arrow-up"></i>
+    </a>
+      
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script src="assets/JS/main.js"></script>
+</body>
+</html>

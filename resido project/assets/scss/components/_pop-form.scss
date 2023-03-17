@@ -1,0 +1,68 @@
+.pop-form {
+    max-width: 600px;
+
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 4em;
+        text-align: center;
+        margin: 1rem 0 1em 0;
+        font-weight: 800;
+    }
+
+    .divider {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+
+        span {
+            position: relative;
+            background: #fff;
+            padding: 0 10px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid #E1E5F2;
+            z-index: -1;
+        }
+    }
+}
+
+.social-links-login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 20px 10px;
+        margin: 0 10px;
+
+        i {
+            margin-right: 7px;
+        }
+
+        &.with-fb {
+            background-color:#3b5998;
+        }
+        &.with-google {
+            background-color:#ec4514;
+        }
+    }
+}

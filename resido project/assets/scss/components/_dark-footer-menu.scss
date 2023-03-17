@@ -1,0 +1,89 @@
+#dark-footer-menu {
+    background: #1b263e;
+
+    .footer-widget {
+        padding: 70px 0;
+        img {
+            max-width: 180px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-add {
+            color: #5a6980;
+            font-size: 14px;
+
+            p {
+                margin: 0 0 10px;
+            }
+        }
+
+        h4 {
+            color: #fff;
+            font-weight: 500;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .footer-menu {
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: block;
+                list-style: none;
+                margin-top: 15px;
+
+                a {
+                    color: #5a6980;
+                    font-size: 14px;
+                    font-weight: 600;
+                    transition: all .4s ease;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .other-store-link {
+            width: auto;
+            display: inline-block;
+            margin-bottom: 20px;
+
+            .other-store-app {
+                width: 250px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                color: #ffffff;
+                flex-wrap: wrap;
+                border: 1px solid #353d56;
+                border-radius: 4px;
+                padding: 0 14px;
+
+                .os-app-icon {
+                    margin-right: 13px;
+                    
+                    i {
+                        color: #1266e3;
+                        font-size: 32px;
+                    }
+                }
+    
+                .os-app-caps {
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 600;
+    
+                    span {
+                        color: #5a6980;
+                        font-size: 13px;
+                        font-weight: 600;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

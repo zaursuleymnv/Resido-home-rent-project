@@ -1,0 +1,48 @@
+#form-contact-options {
+    padding: 80px 0;
+
+    .contact-form-get-in-touch {
+        .contact-info {
+            margin-left: 1rem;
+
+            h2 {
+                line-height: 36px;
+                font-size: 30px;
+            }
+
+            p {
+                margin: 0 0 15px;
+                line-height: 1.8;
+            }
+
+            .info-details {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                margin-bottom: 1.5rem;
+
+                .info-icon {
+                    width: 50px;
+                    height: 50px;
+
+                    i {
+                        font-size: 35px;
+                    }
+                }
+
+                .info-content {
+                    h4 {
+                        font-size: 15px;
+                        margin-bottom: 2px;
+                        line-height: 1.8;
+                    }
+
+                    span {
+                        display: block;
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+    }
+}

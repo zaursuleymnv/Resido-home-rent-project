@@ -1,0 +1,43 @@
+#copy-right {
+    background: #192339;
+    border-top: none;
+    padding: 20px 0;
+
+    p {
+        a {
+            color: #5a6980;
+            transition: all .4s ease;
+            font-size: 14px;
+            font-weight: 600;
+
+            &:hover {
+                color: #1266e3;
+            }
+        }
+    }
+
+    .social-links {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 17px 0 0;
+
+            a {
+                color: #5a6980;
+                font-size: 14px;
+                transition: all .3s ease;
+
+                i {
+                    margin-right: 5px;
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

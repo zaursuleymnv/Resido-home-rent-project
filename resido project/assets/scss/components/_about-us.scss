@@ -1,0 +1,16 @@
+#about-us {
+    padding: 50px 0;
+    background-color: $secondary-bg-color;
+    .about-title-wrapper {
+        .title {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .suptitle {
+            color: #7590f3;
+            font-size: 20px;
+            font-family: initial;
+            font-style: italic;
+        }
+    }
+}

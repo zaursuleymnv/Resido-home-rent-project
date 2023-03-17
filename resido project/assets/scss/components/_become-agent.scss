@@ -1,0 +1,35 @@
+#become-agent {
+    background: $primary-bg-color;
+    padding: 50px 0;
+    .action {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+
+        .title {
+            h3 {
+                color: #ffffff;
+                margin-bottom: 5px;
+            }
+        }
+
+        .btn-action {
+            display: inline-block;
+            background: #ffffff;
+            padding: 18px 40px;
+            border-radius: 50px;
+            color: #333640;
+            font-weight: 600;
+            border: 2px solid transparent;
+            box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, .2);
+            -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, .2);
+
+            &:hover {
+                color: #1266e3;
+                border-color: #1266e3;
+            }
+        }
+    }
+}

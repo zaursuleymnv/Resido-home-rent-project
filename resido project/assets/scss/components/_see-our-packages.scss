@@ -1,0 +1,148 @@
+#our-packages {
+    padding: 80px 0;
+
+    .packages {
+        .item {
+            text-align: center;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 0.5rem;
+            margin-top: 25px;
+            position: relative;
+            padding: 7px;
+            border: 1px solid #eaecf1;
+
+            .header {
+                padding: 2em 0 2em;
+                width: 100%;
+                background: #eeeeee;
+                border-radius: 5px;
+
+                .price-value {
+                    position: relative;
+                    font-size: 4em;
+                    line-height: 1;
+                    margin-bottom: 0;
+                    sup {
+                        font-size: 1.5rem;
+                        vertical-align: super;
+                    }
+                }
+
+                .pr-title {
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    margin: 0 0 5px 0;
+                    font-weight: 700;
+                }
+            }
+
+            .price-content {
+                ul {
+                    text-align: left;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px dashed #e1e4ec;
+                        list-style: none;
+                        padding: 14px 15px;
+
+                        span {
+
+                        }
+
+                        i {
+                            width: 15px;
+                            height: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: #e9ebf3;
+                            font-size: 7px;
+                            font-family: 'themify';
+                            border-radius: 50%;
+                        }
+
+                        &.available {
+                            i {
+                                background: rgba(0, 212, 202,0.2);
+                                color: #0cbfb7;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .price-bottom {
+                display: table;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 2rem 0;
+                
+                .btn-pricing {
+                    position: relative;
+                    display: table;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding: 16px 50px;
+                    background: transparent !important;
+                    border-radius: 4px;
+                    color: #08184b !important;
+                    transition: all ease 0.4s;
+                    width: 80%;
+                    border: 2px solid #d0d6e6 !important;
+                    font-weight: 600;
+
+                    &:hover {
+                        background: rgba(15,202,152,0.2) !important;
+                        border-color: rgba(15,202,152,0.3) !important;
+                        color: #0fca98 !important;
+                    }
+                }
+            }
+
+            &.recommended {
+                .price-bottom {
+                    .btn-pricing {
+                        background: rgba(15,202,152,0.2) !important;
+                        border-color: rgba(15,202,152,0.3) !important;
+                        color: #0fca98 !important;
+                    }
+                }
+            }
+
+            &.basic-pr {
+                .header {
+                    background: rgba(253, 83, 50, 0.1);
+
+                    .price-value {
+                        color: rgba(253, 83, 50,1);
+                    }
+                }
+            }
+            &.platinum-pr {
+                .header {
+                    background: rgba(39, 183, 55,0.1);
+
+                    .price-value {
+                        color: #27cc8f !important;
+                    }
+                }
+            }
+            &.standard-pr {
+                .header {
+                    background: rgba(3, 169, 244,0.1);
+
+                    .price-value {
+                        color: rgba(3, 169, 244,1);
+                    }
+                }
+            }
+        }
+    }
+}
