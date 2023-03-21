@@ -315,6 +315,26 @@ a.link-cl {
     color: #1266e3;
 }
 
+.tsl-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 20px;
+}
+
+.pag-title {
+    color: #000c35;
+    font-size: 20px;
+}
+
+.pag-text {
+    color: #6e7c90;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+}
+
 .btn-theme {
     background-color: $primary-bg-color;
     border-color: $primary-bg-color;
