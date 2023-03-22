@@ -38,6 +38,16 @@
                         font-size: 19px;
                         line-height: 26px;
                         margin-bottom: 4px;
+
+                        a {
+                            @include transition(.1s ease)
+                        }
+
+                        &:hover {
+                            a {
+                                color: #1266e3;
+                            }
+                        }
                     }
 
                     p {
@@ -59,6 +69,11 @@
                             font-family: 'lineicons';
                             right: -27px;
                             top: 2px;
+                            @include transition(.2s ease)
+                        }
+
+                        &:hover::before {
+                            @include transform(translateX(12px));
                         }
                     }
                 }

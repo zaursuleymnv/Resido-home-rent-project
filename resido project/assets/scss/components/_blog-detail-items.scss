@@ -338,7 +338,171 @@
                 }
             }
 
-            
+            .comment-submit-form {
+                .reply-title {
+                    line-height: 30px;
+                    font-size: 24px;
+                }
+
+                form {
+                    .form-group {
+                        .form-control {
+                            background: #f9fafc;
+                            border: 1px solid #ebedf5;
+                            border-radius: 3px;
+                            color: #646e77;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .single-widget-item {
+        background: #ffffff;
+        border: 2px solid #e5e8f3;
+        border-radius: 6px;
+        padding: 30px 28px 35px;
+        margin: 0 0 40px;
+
+        h4 {
+            line-height: 26px;
+            font-size: 21px;
+        }
+
+        .search-form {
+            position: relative;
+            input {
+                border-radius: 4px;
+                border: 1px solid #ebedf5;
+                background: #f9fafc;
+                font-size: 12px;
+                padding: 10px 70px 10px 30px;
+                height: 60px;
+                width: 100%;
+            }
+
+            button {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 52px;
+                height: 50px;
+                color: #fff;
+                background: #1266e3;
+                font-size: 14px;
+                border: 0;
+                outline: 0;
+                border-radius: 4px;
+                line-height: 50px;
+            }
+        }
+
+        .cat-list {
+            padding: 0;
+
+            li {
+                border-bottom: 1px solid #eaeaea;
+                padding: 11px 0;
+
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .post-list {
+            padding: 0;
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 15px;
+
+                .img {
+                    max-width: 80px;
+
+                    img {
+                        width: 100%;
+                        border-radius: 3px;
+                    }
+                }
+
+                .content {
+                    display: block;
+                    overflow: hidden;
+
+                    a {
+                        display: block;
+                        overflow: hidden;
+                        letter-spacing: 0;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 22px;
+                        margin: 0 0 7px;
+                        padding-left: 20px;
+                    }
+
+                    .date {
+                        color: #6e7c90;
+                        display: block;
+                        overflow: hidden;
+                        letter-spacing: 0;
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding-left: 20px;
+
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tag-list {
+            padding: 0;
+            li {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 5px;
+                z-index: 1;
+
+                a {
+                    display: block;
+                    border: 1px solid #eaeaea;
+                    letter-spacing: 0;
+                    font-size: 14px;
+                    padding: 9px 25px;
+                    @include transition(.3s ease);
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left:0;
+                    right:0;
+                    height: 100%;
+                    background: $primary-bg-color;
+                    transform: scale(0,1);
+                    transform-origin: 100% 50%;
+                    @include transition(transform .4s ease);
+                    z-index: -1;
+                }
+
+                &:hover {
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                &:hover::after {
+                    transform-origin: 0% 50%;
+                    transform: scale(1,1);
+                    z-index: -1;
+                }
+            }
         }
     }
 }
