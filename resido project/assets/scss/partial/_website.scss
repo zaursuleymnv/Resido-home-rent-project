@@ -475,5 +475,21 @@ a.link-cl {
     }
 }
 
+@media(max-width: 767.98px) {
+    #become-agent {
+        .action {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    #dark-footer-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 

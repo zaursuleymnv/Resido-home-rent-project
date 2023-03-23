@@ -23,12 +23,19 @@
         position: relative;
         z-index: 99;
         .text-light {
-            font-size: 4.142em;
-            line-height: 1.31em;
+            font-size: 36px;
+            line-height: 40px;
+            // font-size: 4.142em;
+            // line-height: 1.31em;
             font-weight: 700;
             text-transform: capitalize;
             font-family: $secondary-font;
             margin: 0 0 .5rem 0;
+
+            @media (min-width: 992px) {
+                font-size: 4.142em;
+                line-height: 1.31em;
+            }
         }
 
         .faq-search {

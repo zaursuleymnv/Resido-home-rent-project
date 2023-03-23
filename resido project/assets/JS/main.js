@@ -56,6 +56,14 @@ $(document).ready(function() {
         dotsClass: 'slick-dots',
         responsive: [
           {
+            breakpoint: 992,
+            settings: {
+            arrows: false,
+            slidesToShow:3,
+            dots: true,
+            }
+          },
+          {
             breakpoint: 768,
             settings: {
             arrows: false,
