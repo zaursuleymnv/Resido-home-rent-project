@@ -141,10 +141,6 @@
                                 font-size: 16px;
                                 line-height: 22px;
                                 @include transition(.2s ease);
-
-                                i {
-
-                                }
                             }
                         }
                     }
@@ -414,9 +410,12 @@
 
         .post-list {
             padding: 0;
+
             li {
-                display: flex;
-                justify-content: space-between;
+                // display: flex;
+                // justify-content: space-between;
+                display: block;
+                overflow: hidden;
                 margin: 0 0 15px;
 
                 .img {

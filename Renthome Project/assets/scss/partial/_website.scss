@@ -475,7 +475,7 @@ a.link-cl {
     }
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
     #become-agent {
         .action {
             display: block;
@@ -488,6 +488,18 @@ a.link-cl {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #blog-detail {
+        .single-widget-item {
+            .post-list {
+                li {
+                    justify-content: flex-start;
+                }
+            }
+        }
     }
 }
 
